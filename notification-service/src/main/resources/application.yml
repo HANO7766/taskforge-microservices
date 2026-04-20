@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: notification-service
+  datasource:
+    url: jdbc:postgresql://localhost:5434/notification_db
+    username: taskforge
+    password: taskforgepassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+# Colas y Exchanges personalizados
+taskforge:
+  rabbitmq:
+    exchange: taskforge.exchange
+    queue: notification.queue
+    routing-key: notification.routingkey
