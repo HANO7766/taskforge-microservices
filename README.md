@@ -106,8 +106,5 @@ El sistema utiliza JWT (JSON Web Tokens) para autenticación stateless. Los toke
 ## 🤖 Integración con IA
 El servicio `ai-assistant-service` se integra con DeepSeek AI para proporcionar asistencia inteligente. Configurado mediante `spring-ai-openai-spring-boot-starter` redirigido a la API de DeepSeek.
 
-## 🐛 Solución de Problemas Comunes
-Consulte [WALKTHROUGH.md](WALKTHROUGH.md) para detalles sobre bugs resueltos durante el desarrollo.
-
 ## 📄 Licencia
 MIT
