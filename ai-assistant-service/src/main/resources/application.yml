@@ -6,7 +6,7 @@ spring:
     name: ai-assistant-service
   ai:
     openai:
-      api-key: ${DEEPSEEK_API_KEY:sk-dca67e23f9c241df94e72eaeb41acb09}
+      api-key: "TU API KEY"
       base-url: https://api.deepseek.com
       chat:
         options:
